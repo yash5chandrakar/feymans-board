@@ -16,7 +16,7 @@ function App() {
       data: [
         {
           id: 10,
-          text: "Yash is FULL Stack Dev",
+          text: "Yash is a FULL Stack Dev",
           status: "green"
         },
         {
@@ -26,7 +26,12 @@ function App() {
         },
         {
           id: 12,
-          text: "Yash actively solves questions on LEETCODE",
+          text: "Yash actively solves questions on LEETCODE ",
+          status: "green"
+        },
+        {
+          id: 14,
+          text: "Yash has made various projects and also contributed to other projects",
           status: "green"
         },
       ],
