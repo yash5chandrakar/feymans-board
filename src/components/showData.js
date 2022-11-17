@@ -18,6 +18,7 @@ const ShowData = (props) => {
         topics.map((item) => {
             console.log("itemID", typeof (item.id))
             console.log("params", typeof (params))
+            // eslint-disable-next-line eqeqeq
             if (item.id == params) {
                 myItem.push(item)
             }
@@ -56,6 +57,7 @@ const ShowData = (props) => {
         newData = { ...newData, completed: completionPercent }
 
         let newTopics = topics.map((item) => {
+            // eslint-disable-next-line eqeqeq
             if (item.id == params) {
                 return newData
             }
