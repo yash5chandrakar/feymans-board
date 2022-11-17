@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import Addtopic from './components/addtopic';
+import ContentNotFound from './components/contentNotFound';
 import Dashboard from './components/dashboard';
 import LandingPage from './components/landingPage';
 import ShowData from './components/showData';
@@ -66,6 +67,7 @@ function App() {
       <Route path='/dashboard' element={<Dashboard deleteItem={deleteItem} topics={topics} isLoggedIn={isLoggedIn} />}></Route>
       <Route path='/addTopic' element={<Addtopic setTopics={setTopics} isLoggedIn={isLoggedIn} />}></Route>
       <Route path='/showData/:itemId' element={<ShowData setTopics={setTopics} topics={topics} isLoggedIn={isLoggedIn} />}></Route>
+      <Route path='*' element={< ContentNotFound />}></Route>
     </Routes>
   );
 }
