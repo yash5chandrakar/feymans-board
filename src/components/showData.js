@@ -13,7 +13,11 @@ const ShowData = (props) => {
 
     useEffect(() => {
         let myItem = []
+
+
         topics.map((item) => {
+            console.log("itemID", typeof (item.id))
+            console.log("params", typeof (params))
             if (item.id == params) {
                 myItem.push(item)
             }
