@@ -16,18 +16,18 @@ function App() {
       data: [
         {
           id: 10,
-          text: "Yash is an aloof fool",
-          status: "red"
+          text: "Yash is FULL Stack Dev",
+          status: "green"
         },
         {
           id: 11,
-          text: "he is patient",
-          status: "red"
+          text: "Yash has learned MERN Stack",
+          status: "green"
         },
         {
           id: 12,
-          text: "he wants to be cool.",
-          status: "red"
+          text: "Yash actively solves questions on LEETCODE",
+          status: "green"
         },
       ],
       completed: 0
