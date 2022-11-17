@@ -16,8 +16,8 @@ const ShowData = (props) => {
 
 
         topics.map((item) => {
-            console.log("itemID", typeof (item.id))
-            console.log("params", typeof (params))
+            // console.log("itemID", typeof (item.id))
+            // console.log("params", typeof (params))
             // eslint-disable-next-line eqeqeq
             if (item.id == params) {
                 myItem.push(item)
@@ -49,10 +49,10 @@ const ShowData = (props) => {
             }
         })
         let newData = { ...myData, data: mydataArray }
-        console.log(newData)
+        // console.log(newData)
 
         let completionPercent = calulatePercentage(newData)
-        console.log(completionPercent)
+        // console.log(completionPercent)
 
         newData = { ...newData, completed: completionPercent }
 
@@ -122,11 +122,3 @@ const ShowData = (props) => {
 
 export default ShowData
 
-
-    // < div className = 'showOptions' > ANY CALL ACTION: <br />
-    //                                     <button>UnderStood</button> <br />
-    //                                     <button>Somewhat UnderStood</button> <br />
-    //                                     <button>NOT CLEAR</button> <br />
-    //                                     <button>WHAT RUBBISH</button> <br />
-    //                                 </ >
-    //                                 <span className='showSpan' key={id++}>♦️ &nbsp; {item.text} &nbsp; &nbsp; ♦️</span> <br /></>

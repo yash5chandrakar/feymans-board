@@ -134,6 +134,10 @@ body {
     cursor: pointer;
 }
 
+.mySpan:hover {
+    font-weight: 1000;
+}
+
 .innerData {
     padding: 20px;
     margin: 10px;
