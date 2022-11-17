@@ -30,7 +30,7 @@ function App() {
           status: "green"
         },
       ],
-      completed: 0
+      completed: 100
     }
   ]
 
